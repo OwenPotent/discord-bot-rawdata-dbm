@@ -1,0 +1,281 @@
+{
+    "name": "createchannel",
+    "permissions": "NONE",
+    "restriction": "1",
+    "_id": "BAItQ",
+    "actions": [
+      {
+        "info": "1",
+        "infoIndex": "1",
+        "storage": "1",
+        "varName": "channelName",
+        "name": "Store Command Params"
+      },
+      {
+        "server": "0",
+        "varName": "",
+        "storage": "1",
+        "varName2": "botMember",
+        "name": "Get Bot as Member"
+      },
+      {
+        "member": "2",
+        "varName": "botMember",
+        "info": "16",
+        "storage": "1",
+        "varName2": "botAvatar",
+        "name": "Store Member Info"
+      },
+      {
+        "member": "1",
+        "varName": "",
+        "permission": "ADMINISTRATOR",
+        "iftrue": "3",
+        "iftrueVal": "5",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Check Member Permissions"
+      },
+      {
+        "title": "❌ Invalid Permissions!",
+        "author": "",
+        "color": "RED",
+        "timestamp": "false",
+        "url": "",
+        "authorIcon": "",
+        "imageUrl": "",
+        "thumbUrl": "${tempVars(\"botAvatar\")}",
+        "storage": "1",
+        "varName": "embed",
+        "name": "Create Embed Message"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "message": "It seems like you do not have the correct permissions to use this command\n\nPlease make sure you have the `MANAGE_GUILD` permissions to be able to use this command",
+        "name": "Set Embed Description"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "message": "🔴 Error",
+        "footerIcon": "",
+        "name": "Set Embed Footer"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "channel": "0",
+        "varName2": "",
+        "storage3": "0",
+        "varName3": "",
+        "name": "Send Embed Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "condition": "0",
+        "comparison": "1",
+        "value": "1",
+        "iftrue": "0",
+        "iftrueVal": "6",
+        "iffalse": "3",
+        "iffalseVal": "6",
+        "name": "Check Parameters"
+      },
+      {
+        "title": "🔵 Whoops!",
+        "author": "",
+        "color": "RED",
+        "timestamp": "false",
+        "url": "",
+        "authorIcon": "",
+        "imageUrl": "",
+        "thumbUrl": "${tempVars(\"botAvatar\")}",
+        "storage": "1",
+        "varName": "embed2",
+        "name": "Create Embed Message"
+      },
+      {
+        "storage": "1",
+        "varName": "embed2",
+        "message": "It looks like you did not state the name of the channel, please try again!",
+        "name": "Set Embed Description"
+      },
+      {
+        "storage": "1",
+        "varName": "embed2",
+        "fieldName": "Format:",
+        "message": "`s-createchannel || s-cc || s-cchannel <channel-name>`",
+        "inline": "1",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed2",
+        "message": "🔴 Error",
+        "footerIcon": "",
+        "name": "Set Embed Footer"
+      },
+      {
+        "storage": "1",
+        "varName": "embed2",
+        "channel": "0",
+        "varName2": "",
+        "storage3": "0",
+        "varName3": "",
+        "name": "Send Embed Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "condition": "0",
+        "comparison": "2",
+        "value": "1",
+        "iftrue": "0",
+        "iftrueVal": "6",
+        "iffalse": "3",
+        "iffalseVal": "6",
+        "name": "Check Parameters"
+      },
+      {
+        "title": "🔶 Whoops!",
+        "author": "",
+        "color": "RED",
+        "timestamp": "false",
+        "url": "",
+        "authorIcon": "",
+        "imageUrl": "",
+        "thumbUrl": "${tempVars(\"botAvatar\")}",
+        "storage": "1",
+        "varName": "embed3",
+        "name": "Create Embed Message"
+      },
+      {
+        "storage": "1",
+        "varName": "embed3",
+        "message": "You have added more than 1 parameters which is not allowed, please use dashes(-) instead",
+        "name": "Set Embed Description"
+      },
+      {
+        "storage": "1",
+        "varName": "embed3",
+        "fieldName": "Format:",
+        "message": "`<command> <channel-name>`",
+        "inline": "1",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed3",
+        "message": "🔴 Error",
+        "footerIcon": "",
+        "name": "Set Embed Footer"
+      },
+      {
+        "storage": "1",
+        "varName": "embed3",
+        "channel": "0",
+        "varName2": "",
+        "storage3": "0",
+        "varName3": "",
+        "name": "Send Embed Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "channelName": "${tempVars(\"channelName\")}",
+        "topic": "A base for the channel, add and edit this channel all you want!",
+        "position": "",
+        "storage": "1",
+        "varName": "channelInfo",
+        "categoryID": "",
+        "reason": "",
+        "name": "Create Text Channel"
+      },
+      {
+        "channel": "3",
+        "varName": "channelInfo",
+        "info": "2",
+        "storage": "1",
+        "varName2": "channelNameInfo",
+        "name": "Store Channel Info"
+      },
+      {
+        "channel": "3",
+        "varName": "channelInfo",
+        "info": "1",
+        "storage": "1",
+        "varName2": "channelIdInfo",
+        "name": "Store Channel Info"
+      },
+      {
+        "channel": "3",
+        "varName": "channelInfo",
+        "info": "9",
+        "storage": "1",
+        "varName2": "channelCreationDateInfo",
+        "name": "Store Channel Info"
+      },
+      {
+        "title": "🔷 Channel successfully created!",
+        "author": "",
+        "color": "#8f8fbe",
+        "timestamp": "false",
+        "url": "",
+        "authorIcon": "",
+        "imageUrl": "",
+        "thumbUrl": "${tempVars(\"botAvatar\")}",
+        "storage": "1",
+        "varName": "embedChannelCreated",
+        "name": "Create Embed Message"
+      },
+      {
+        "storage": "1",
+        "varName": "embedChannelCreated",
+        "fieldName": "Channel Name:",
+        "message": "${tempVars(\"channelNameInfo\")}",
+        "inline": "0",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embedChannelCreated",
+        "fieldName": "Channel ID:",
+        "message": "${tempVars(\"channelIdInfo\")}",
+        "inline": "0",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embedChannelCreated",
+        "fieldName": "Creation Date:",
+        "message": "${tempVars(\"channelCreationDateInfo\")}",
+        "inline": "0",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embedChannelCreated",
+        "message": "🔹 Channel has been created!",
+        "footerIcon": "",
+        "name": "Set Embed Footer"
+      },
+      {
+        "storage": "1",
+        "varName": "embedChannelCreated",
+        "channel": "0",
+        "varName2": "",
+        "storage3": "0",
+        "varName3": "",
+        "name": "Send Embed Message"
+      }
+    ],
+    "_aliases": [
+      "cc",
+      "cchannel"
+    ]
+  }
