@@ -1,0 +1,132 @@
+{
+    "name": "suggest",
+    "permissions": "NONE",
+    "restriction": "1",
+    "_id": "mCUWo",
+    "actions": [
+      {
+        "FirstNumber": "${globalVars(\"sentMsgs\")}",
+        "info": "0",
+        "SecondNumber": "1",
+        "storage": "3",
+        "varName": "sentMsga",
+        "name": "Basic Math Operation"
+      },
+      {
+        "storage": "3",
+        "varName": "sentMsgs",
+        "name": "Save Variable"
+      },
+      {
+        "info": "1",
+        "infoIndex": "1",
+        "storage": "1",
+        "varName": "suggestion",
+        "name": "Store Command Params"
+      },
+      {
+        "member": "1",
+        "varName": "",
+        "info": "2",
+        "storage": "1",
+        "varName2": "suggest.member",
+        "name": "Store Member Info"
+      },
+      {
+        "member": "1",
+        "varName": "",
+        "info": "20",
+        "storage": "1",
+        "varName2": "suggest.member.disc",
+        "name": "Store Member Info"
+      },
+      {
+        "title": "A New Suggestion Has Arrived!",
+        "author": "",
+        "color": "",
+        "timestamp": "false",
+        "url": "",
+        "authorIcon": "",
+        "imageUrl": "",
+        "thumbUrl": "",
+        "storage": "1",
+        "varName": "embed",
+        "name": "Create Embed Message"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "fieldName": "Suggestion By:",
+        "message": "`${tempVars(\"suggest.member\")}#${tempVars(\"suggest.member.disc\")}`",
+        "inline": "1",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "fieldName": "Suggestion:",
+        "message": "`${tempVars(\"suggestion\")}`",
+        "inline": "1",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "message": "👍 = Like 👎 = Dislike 🚫 = Staff Denied ✨ = Added",
+        "footerIcon": "",
+        "name": "Set Embed Footer"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "channel": "6",
+        "varName2": "suggest.channel",
+        "storage3": "1",
+        "varName3": "sent.embed",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "messageContent": "",
+        "name": "Send Embed Message"
+      },
+      {
+        "storage": "1",
+        "varName": "sent.embed",
+        "emoji": "4",
+        "varName2": "👍",
+        "varName3": "",
+        "name": "Add Reaction"
+      },
+      {
+        "storage": "1",
+        "varName": "sent.embed",
+        "emoji": "4",
+        "varName2": "👎",
+        "varName3": "",
+        "name": "Add Reaction"
+      },
+      {
+        "storage": "1",
+        "varName": "sent.embed",
+        "emoji": "4",
+        "varName2": "🚫",
+        "varName3": "",
+        "name": "Add Reaction"
+      },
+      {
+        "storage": "1",
+        "varName": "sent.embed",
+        "emoji": "4",
+        "varName2": "✨",
+        "varName3": "",
+        "name": "Add Reaction"
+      }
+    ],
+    "comType": "0",
+    "customData": {
+      "Command Info": {
+        "category": "Suggestions",
+        "description": "Sends your suggestion to the set channel",
+        "include": "Yes"
+      }
+    }
+  }

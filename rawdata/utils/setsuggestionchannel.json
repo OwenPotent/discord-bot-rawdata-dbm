@@ -1,0 +1,37 @@
+{
+    "name": "setsuggestch",
+    "permissions": "ADMINISTRATOR",
+    "restriction": "1",
+    "_id": "xfcbd",
+    "actions": [
+      {
+        "info": "4",
+        "infoIndex": "1",
+        "storage": "2",
+        "varName": "suggest.channel",
+        "name": "Store Command Params"
+      },
+      {
+        "storage": "2",
+        "varName": "suggest.channel",
+        "name": "Save Variable"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "The suggestion channel has been set to ${serverVars(\"suggest.channel\")}",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      }
+    ],
+    "customData": {
+      "Command Info": {
+        "category": "Suggestions",
+        "description": "Sets a suggestion channel",
+        "include": "Yes"
+      }
+    }
+  }
