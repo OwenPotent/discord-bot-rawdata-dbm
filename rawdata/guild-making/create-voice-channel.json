@@ -1,0 +1,225 @@
+{
+  "name": "createvoice",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "otmEM",
+  "actions": [
+    {
+      "info": "1",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "voiceChannel",
+      "name": "Store Command Params"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "storage": "1",
+      "varName2": "botMember",
+      "name": "Get Bot as Member"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "info": "16",
+      "storage": "1",
+      "varName2": "botMemberIcon",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "permission": "MANAGE_GUILD",
+      "iftrue": "3",
+      "iftrueVal": "5",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Member Permissions"
+    },
+    {
+      "title": "❌ Invalid Permissions!",
+      "author": "",
+      "color": "RED",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "${tempVars(\"botMemberIcon\")}",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "It seems like you do not have the correct permissions to use this command\n\nPlease make sure you have the `MANAGE_GUILD` permissions to be able to use this command",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "🔴 Error!",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "condition": "0",
+      "comparison": "2",
+      "value": "0",
+      "iftrue": "3",
+      "iftrueVal": "6",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "title": "🔵 Whoops!",
+      "author": "",
+      "color": "RED",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "${tempVars(\"botMemberIcon\")}",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed2",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed2",
+      "message": "It seems like you did not state the name of the category, please try again!",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed2",
+      "fieldName": "Format:",
+      "message": "`g!createvoice || g!cv || g!cvoice <voice channel name>`",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed2",
+      "message": "🔴 Error!",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "embed2",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channelName": "${tempVars(\"voiceChannel\")}",
+      "bitrate": "",
+      "userLimit": "",
+      "storage": "1",
+      "varName": "voiceChannelNew",
+      "categoryID": "",
+      "reason": "",
+      "name": "Create Voice Channel"
+    },
+    {
+      "channel": "3",
+      "varName": "voiceChannelNew",
+      "info": "2",
+      "storage": "1",
+      "varName2": "voiceChannelName",
+      "name": "Store Voice Channel Info"
+    },
+    {
+      "channel": "3",
+      "varName": "voiceChannelNew",
+      "info": "1",
+      "storage": "1",
+      "varName2": "voiceChannelID",
+      "name": "Store Voice Channel Info"
+    },
+    {
+      "channel": "3",
+      "varName": "voiceChannelNew",
+      "info": "5",
+      "storage": "1",
+      "varName2": "voiceChannelBitrate",
+      "name": "Store Voice Channel Info"
+    },
+    {
+      "title": "🔵 Voice Channel Created!",
+      "author": "",
+      "color": "#8f8fbe",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "${tempVars(\"botMemberIcon\")}",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed3",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "voiceChannelName",
+      "fieldName": "VC Name:",
+      "message": "`${tempVars(\"voiceChannelName\")}`",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "voiceChannelName",
+      "fieldName": "VC ID:",
+      "message": "`${tempVars(\"voiceChannelID\")}`",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "voiceChannelName",
+      "fieldName": "VC Bitrate:",
+      "message": "`${tempVars(\"voiceChannelBitrate\")}`",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed3",
+      "message": "🔹 VC has been created!",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "embed3",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "_aliases": [
+    "cvoice",
+    "cv"
+  ]
+}
