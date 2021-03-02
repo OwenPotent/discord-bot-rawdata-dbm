@@ -1,0 +1,2 @@
+- name: fancier-discord-webhooks
+  uses: Slimefun/discord-webhook@1.5
