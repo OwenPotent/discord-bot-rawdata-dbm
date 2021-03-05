@@ -1,0 +1,227 @@
+{
+    "name": "botinfo",
+    "permissions": "NONE",
+    "restriction": "1",
+    "_id": "FrhcX",
+    "actions": [
+      {
+        "server": "0",
+        "varName": "",
+        "storage": "1",
+        "varName2": "Bot",
+        "name": "Get Bot as Member"
+      },
+      {
+        "member": "2",
+        "varName": "Bot",
+        "info": "2",
+        "storage": "1",
+        "varName2": "Bot Display Name",
+        "name": "Store Member Info"
+      },
+      {
+        "info": "23",
+        "storage": "1",
+        "varName2": "Uptime in Days",
+        "name": "Store Bot Client Info"
+      },
+      {
+        "info": "24",
+        "storage": "1",
+        "varName2": "Uptime in Hours",
+        "name": "Store Bot Client Info"
+      },
+      {
+        "info": "25",
+        "storage": "1",
+        "varName2": "Uptime in Minutes",
+        "name": "Store Bot Client Info"
+      },
+      {
+        "info": "26",
+        "storage": "1",
+        "varName2": "Uptime in Secconds",
+        "name": "Store Bot Client Info"
+      },
+      {
+        "info": "3",
+        "storage": "1",
+        "varName2": "Ammount of guilds",
+        "name": "Store Bot Client Info"
+      },
+      {
+        "info": "4",
+        "storage": "1",
+        "varName2": "Ammount of Users",
+        "name": "Store Bot Client Info"
+      },
+      {
+        "info": "10",
+        "storage": "1",
+        "varName2": "Ammount of channels",
+        "name": "Store Bot Client Info"
+      },
+      {
+        "info": "11",
+        "storage": "1",
+        "varName2": "Ammount of Emojis",
+        "name": "Store Bot Client Info"
+      },
+      {
+        "info": "32",
+        "storage": "1",
+        "varName2": "Ammount of Commands",
+        "name": "Store Bot Client Info"
+      },
+      {
+        "info": "33",
+        "storage": "1",
+        "varName2": "Ammount of Events",
+        "name": "Store Bot Client Info"
+      },
+      {
+        "info": "9",
+        "storage": "1",
+        "varName2": "Ammount of Voice Connections",
+        "name": "Store Bot Client Info"
+      },
+      {
+        "info": "20",
+        "storage": "1",
+        "varName2": "Bot Client ID",
+        "name": "Store Bot Client Info"
+      },
+      {
+        "info": "44",
+        "storage": "1",
+        "varName2": "Bot Owner Client ID",
+        "name": "Store Bot Client Info"
+      },
+      {
+        "info": "28",
+        "storage": "1",
+        "varName2": "Bot OS",
+        "name": "Store Bot Client Info"
+      },
+      {
+        "info": "35",
+        "storage": "1",
+        "varName2": "CPU Core Count",
+        "name": "Store Bot Client Info"
+      },
+      {
+        "info": "36",
+        "storage": "1",
+        "varName2": "Total Memory",
+        "name": "Store Bot Client Info"
+      },
+      {
+        "info": "39",
+        "storage": "1",
+        "varName2": "Avail Memory",
+        "name": "Store Bot Client Info"
+      },
+      {
+        "info": "41",
+        "storage": "1",
+        "varName2": "Used Memory",
+        "name": "Store Bot Client Info"
+      },
+      {
+        "info": "43",
+        "storage": "1",
+        "varName2": "Used Memory %",
+        "name": "Store Bot Client Info"
+      },
+      {
+        "info": "2",
+        "storage": "1",
+        "varName2": "Ping",
+        "name": "Store Bot Client Info"
+      },
+      {
+        "info": "21",
+        "storage": "1",
+        "varName2": "DJS Version",
+        "name": "Store Bot Client Info"
+      },
+      {
+        "info": "31",
+        "storage": "1",
+        "varName2": "NodeJS Version",
+        "name": "Store Bot Client Info"
+      },
+      {
+        "title": "System Stats",
+        "author": "Created by Shean_Owen#1090",
+        "color": "#8f8fbe",
+        "timestamp": "true",
+        "url": "",
+        "authorIcon": "",
+        "imageUrl": "",
+        "thumbUrl": "",
+        "storage": "1",
+        "varName": "Embed",
+        "name": "Create Embed Message"
+      },
+      {
+        "storage": "1",
+        "varName": "Embed",
+        "fieldName": "Bot Version",
+        "message": "```1.3.2 Alpha```",
+        "inline": "1",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "Embed",
+        "fieldName": "Uptime",
+        "message": "${tempVars(\"Bot Display Name\")} has been Up for:\n```${tempVars(\"Uptime in Days\")} Days, ${tempVars(\"Uptime in Hours\")} Hours, ${tempVars(\"Uptime in Minutes\")} Minutes, ${tempVars(\"Uptime in Secconds\")} Secconds```\n\n",
+        "inline": "1",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "Embed",
+        "fieldName": "Amounts",
+        "message": "${tempVars(\"Bot Display Name\")} is in:\n```${tempVars(\"Ammount of guilds\")} Servers```\nWatching Over:\n```${tempVars(\"Ammount of Users\")} Users```\nMonitoring:\n```${tempVars(\"Ammount of channels\")} Channels```\nSpamming:\n```${tempVars(\"Ammount of Emojis\")} Emojis```\nLooking for people to do one of\n```${tempVars(\"Ammount of Commands\")} Commands```\nWaiting to trigger one of\n```${tempVars(\"Ammount of Events\")} Events```\nPlaying Music For:\n```${tempVars(\"Ammount of Voice Connections\")} Voice chats```",
+        "inline": "1",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "Embed",
+        "fieldName": "Bot Client Info",
+        "message": " ${tempVars(\"Bot Display Name\")} Client ID is:\n```${tempVars(\"Bot Client ID\")}```\n ${tempVars(\"Bot Display Name\")} Bot Owners Client ID is\n```${tempVars(\"Bot Owner Client ID\")}```\n ${tempVars(\"Bot Display Name\")} is Running on:\n```${tempVars(\"Bot OS\")}```\n${tempVars(\"Bot Display Name\")}'s Ping\n```${tempVars(\"Ping\")}```\n${tempVars(\"Bot Display Name\")} is running DiscordJS Version:\n```${tempVars(\"DJS Version\")}```\n${tempVars(\"Bot Display Name\")} is running NodeJS Version:\n```${tempVars(\"NodeJS Version\")}```",
+        "inline": "1",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "Embed",
+        "fieldName": "Host Stats",
+        "message": "CPU Core Count\n```${tempVars(\"CPU Core Count\")}```\nTotal Memory\n```${tempVars(\"Total Memory\")}```\nAvailable Memory\n```${tempVars(\"Avail Memory\")}```\nUsed Memory\n```${tempVars(\"Used Memory\")}```\nMemory %\n```${tempVars(\"Used Memory %\")}```",
+        "inline": "1",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "Embed",
+        "channel": "0",
+        "varName2": "",
+        "storage3": "0",
+        "varName3": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "messageContent": "",
+        "name": "Send Embed Message"
+      }
+    ],
+    "customData": {
+      "Command Info": {
+        "category": "Info",
+        "description": "Get bot system stats",
+        "include": "Yes"
+      }
+    }
+  }

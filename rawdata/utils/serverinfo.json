@@ -1,0 +1,215 @@
+{
+    "name": "serverinfo",
+    "permissions": "NONE",
+    "restriction": "1",
+    "_id": "naIcp",
+    "actions": [
+      {
+        "server": "0",
+        "varName": "",
+        "storage": "1",
+        "varName2": "bot-as-member",
+        "name": "Get Bot as Member"
+      },
+      {
+        "member": "2",
+        "varName": "bot-as-member",
+        "info": "16",
+        "storage": "1",
+        "varName2": "bot-avatar",
+        "name": "Store Member Info"
+      },
+      {
+        "server": "0",
+        "varName": "",
+        "info": "2",
+        "storage": "1",
+        "varName2": "server-name",
+        "name": "Store Server Info"
+      },
+      {
+        "server": "0",
+        "varName": "",
+        "info": "11",
+        "storage": "1",
+        "varName2": "server-owner",
+        "name": "Store Server Info"
+      },
+      {
+        "server": "0",
+        "varName": "",
+        "info": "4",
+        "storage": "1",
+        "varName2": "server-region",
+        "name": "Store Server Info"
+      },
+      {
+        "server": "0",
+        "varName": "",
+        "info": "44",
+        "storage": "1",
+        "varName2": "server-boosts-count",
+        "name": "Store Server Info"
+      },
+      {
+        "server": "0",
+        "varName": "",
+        "info": "23",
+        "storage": "1",
+        "varName2": "server-channels-count",
+        "name": "Store Server Info"
+      },
+      {
+        "server": "0",
+        "varName": "",
+        "info": "37",
+        "storage": "1",
+        "varName2": "server-roles-count",
+        "name": "Store Server Info"
+      },
+      {
+        "server": "0",
+        "varName": "",
+        "info": "35",
+        "storage": "1",
+        "varName2": "server-human-count",
+        "name": "Store Server Info"
+      },
+      {
+        "server": "0",
+        "varName": "",
+        "info": "30",
+        "storage": "1",
+        "varName2": "server-bot-count",
+        "name": "Store Server Info"
+      },
+      {
+        "server": "0",
+        "varName": "",
+        "info": "17",
+        "storage": "1",
+        "varName2": "server-member-count",
+        "name": "Store Server Info"
+      },
+      {
+        "server": "0",
+        "varName": "",
+        "info": "6",
+        "storage": "1",
+        "varName2": "server-verification-level",
+        "name": "Store Server Info"
+      },
+      {
+        "server": "0",
+        "varName": "",
+        "info": "14",
+        "storage": "1",
+        "varName2": "server-roles-list",
+        "name": "Store Server Info"
+      },
+      {
+        "title": "",
+        "author": "${tempVars(\"server-name\")}",
+        "color": "#8f8fbe",
+        "timestamp": "false",
+        "url": "",
+        "authorIcon": "${tempVars(\"bot-avatar\")}",
+        "imageUrl": "",
+        "thumbUrl": "${tempVars(\"bot-avatar\")}",
+        "storage": "1",
+        "varName": "embed",
+        "name": "Create Embed Message"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "fieldName": "**Server Owner**",
+        "message": "${tempVars(\"server-owner\")}",
+        "inline": "0",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "fieldName": "**Server Region**",
+        "message": "${tempVars(\"server-region\")}",
+        "inline": "0",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "fieldName": "**Server Bots**",
+        "message": "${tempVars(\"server-bot-count\")}",
+        "inline": "0",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "fieldName": "**Server Humans**",
+        "message": "${tempVars(\"server-human-count\")}",
+        "inline": "0",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "fieldName": "**Server Total Members**",
+        "message": "${tempVars(\"server-member-count\")}",
+        "inline": "0",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "fieldName": "**Server Roles**",
+        "message": "${tempVars(\"server-roles-count\")}",
+        "inline": "0",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "fieldName": "**Server Channels**",
+        "message": "${tempVars(\"server-channels-count\")}",
+        "inline": "0",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "fieldName": "**Verification Level**",
+        "message": "${tempVars(\"server-verification-level\")}",
+        "inline": "0",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "fieldName": "**Roles**",
+        "message": "${tempVars(\"server-roles-list\")}",
+        "inline": "1",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "channel": "0",
+        "varName2": "",
+        "storage3": "0",
+        "varName3": "",
+        "name": "Send Embed Message"
+      }
+    ],
+    "_aliases": [
+      "server"
+    ],
+    "customData": {
+      "Command Info": {
+        "category": "Info",
+        "description": "returns server information",
+        "include": "Yes"
+      }
+    }
+  }
